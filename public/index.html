@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050b18">
+<title>For Rexyiel | The Journey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<button class="music-control" onclick="toggleEpicMusic()">🎵 MUSIC ON / OFF</button>
+<audio id="bgMusic" src="/music/lagu.mp3" loop preload="auto"></audio>
+
+<div id="powerEffect"><div class="power-ring"></div></div>
+<div class="legendary-title" id="legendaryTitle">
+  <div class="power-symbol">⚡</div>
+  <div class="power-label">SPECIAL ACHIEVEMENT UNLOCKED</div>
+  <h1>REXYIEL</h1>
+  <p>LEGENDARY MODE ACTIVATED</p>
+  <div class="achievement-card">
+    <span>🏆 SPECIAL ACHIEVEMENT</span>
+    <h2>THE JOURNEY NEVER ENDS</h2>
+    <p>Every stream, every effort, every dream matters.</p>
+    <strong>REXYIEL • THE NEXT LEGEND</strong>
+  </div>
+  <button class="btn" onclick="closeLegendary()">CONTINUE THE JOURNEY ✨</button>
+</div>
+
+<div class="intro" id="intro">
+  <div class="intro-stars">✦　✧　✦　✧　✦</div>
+  <p class="eyebrow">A SPECIAL GIFT FROM A FAN</p>
+  <h1>THIS IS<br>FOR <span>REXYIEL</span></h1>
+  <div class="gift">🎁</div>
+  <p class="intro-text">Sebuah hadiah kecil berisi dukungan besar.</p>
+  <button class="btn" onclick="openGift()">BUKA HADIAH ✨</button>
+  <small>MADE WITH SUPPORT AND APPRECIATION</small>
+</div>
+
+<header class="navbar">
+  <a class="logo" href="#home">REXYIEL<span>.</span></a>
+  <nav>
+    <a href="#message">Message</a>
+    <a href="#motivation">Motivation</a>
+    <a href="#journey">Journey</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <p class="eyebrow">KEEP STREAMING • KEEP SHINING</p>
+  <h1>YOUR JOURNEY<br>IS <span>JUST BEGINNING.</span></h1>
+  <p class="hero-desc">
+    Untuk Rexyiel, teruslah berkarya, teruslah bermimpi,
+    dan jangan pernah meremehkan langkah kecil yang kamu ambil hari ini.
+  </p>
+  <a class="btn" href="#message">LIHAT PESAN SPESIAL ↓</a>
+  <div class="scroll-note">SCROLL TO DISCOVER</div>
+</section>
+
+<section class="section" id="message">
+  <p class="eyebrow">A MESSAGE FOR YOU</p>
+  <h2>YOU ARE <span>IMPORTANT.</span></h2>
+  <div class="message-card">
+    <div class="big-icon">⭐</div>
+    <h3>Dear Rexyiel,</h3>
+    <p>
+      Mungkin perjalanan menjadi seorang streamer tidak selalu mudah.
+      Ada hari ketika penonton ramai, ada hari ketika suasana terasa sepi.
+      Namun, jangan jadikan angka penonton sebagai alasan untuk berhenti.
+    </p>
+    <p>
+      Setiap streamer hebat pernah memulai dari nol.
+      Setiap komunitas besar pernah dimulai dari beberapa orang.
+      Yang terpenting adalah keberanian untuk terus mencoba,
+      belajar, dan memberikan hiburan terbaik.
+    </p>
+    <p>
+      Semoga suatu hari nanti nama Rexyiel semakin dikenal,
+      komunitas semakin besar, dan semua kerja kerasmu membuahkan hasil.
+    </p>
+    <h3 class="signature">Keep going, Rexyiel. We believe in you! ✨</h3>
+  </div>
+</section>
+
+<section class="section motivation" id="motivation">
+  <p class="eyebrow">A LITTLE REMINDER FOR TODAY</p>
+  <h2>DAILY <span>MOTIVATION</span></h2>
+  <div class="quote-card">
+    <div class="quote-mark">“</div>
+    <p id="dailyQuote">Teruslah melangkah. Perjalanan besar dimulai dari langkah kecil.</p>
+    <small id="quoteDay">A MESSAGE FOR REXYIEL</small>
+  </div>
+</section>
+
+<section class="section" id="journey">
+  <p class="eyebrow">THE ROAD TO GREATNESS</p>
+  <h2>YOUR <span>JOURNEY</span></h2>
+  <p class="section-desc">Hal-hal kecil yang bisa membawa perjalanan streaming menjadi lebih baik.</p>
+
+  <div class="journey-grid">
+    <article class="journey-card">
+      <div class="card-icon">🎮</div>
+      <h3>ENJOY THE PROCESS</h3>
+      <p>Nikmati setiap live. Jangan hanya mengejar hasil, tetapi bangun pengalaman yang menyenangkan.</p>
+    </article>
+    <article class="journey-card">
+      <div class="card-icon">🔥</div>
+      <h3>STAY CONSISTENT</h3>
+      <p>Buat jadwal yang realistis dan tetap seimbang dengan istirahat serta kehidupan sehari-hari.</p>
+    </article>
+    <article class="journey-card">
+      <div class="card-icon">💬</div>
+      <h3>BUILD A COMMUNITY</h3>
+      <p>Hargai penonton, sapa mereka, dan ciptakan komunitas yang ramah serta saling mendukung.</p>
+    </article>
+    <article class="journey-card">
+      <div class="card-icon">🌟</div>
+      <h3>BE YOURSELF</h3>
+      <p>Tidak perlu menjadi orang lain. Keunikan dan kepribadianmu adalah bagian dari perjalananmu.</p>
+    </article>
+    <article class="journey-card">
+      <div class="card-icon">📈</div>
+      <h3>KEEP LEARNING</h3>
+      <p>Pelajari hal baru, dengarkan masukan yang baik, dan terus tingkatkan kualitas konten.</p>
+    </article>
+    <article class="journey-card">
+      <div class="card-icon">⭐</div>
+      <h3>NEVER GIVE UP</h3>
+      <p>Jika hari ini terasa berat, istirahatlah. Besok selalu ada kesempatan untuk mencoba lagi.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section dream-section">
+  <p class="eyebrow">ONE DAY, YOU WILL LOOK BACK</p>
+  <h2>FROM SMALL STEPS<br>TO <span>BIG DREAMS.</span></h2>
+  <p>
+    Bayangkan suatu hari nanti kamu melihat kembali perjalanan ini.
+    Semua live, semua usaha, semua orang yang pernah mendukungmu.
+    Semoga kamu bisa tersenyum dan berkata:
+  </p>
+  <div class="dream-quote">"I'm glad I never stopped believing."</div>
+</section>
+
+<section class="section support" id="support">
+  <p class="eyebrow">A COMMUNITY FULL OF LOVE</p>
+  <h2>WALL OF <span>SUPPORT</span></h2>
+  <p class="section-desc">Tinggalkan pesan positif untuk memberikan semangat kepada Rexyiel.</p>
+
+  <div class="message-card form-card">
+    <h3>💌 SEND YOUR SUPPORT</h3>
+    <input id="supportName" maxlength="24" placeholder="Nama panggilan">
+    <textarea id="supportMessage" maxlength="240" placeholder="Tulis pesan semangat untuk Rexyiel..."></textarea>
+    <button class="btn" onclick="sendSupport()">KIRIM PESAN ⭐</button>
+    <p id="supportStatus" class="status"></p>
+    <small>Gunakan nama panggilan, jangan tulis informasi pribadi.</small>
+  </div>
+
+  <div class="support-grid" id="supportList">
+    <article class="support-card">
+      <div>⭐</div><h3>Keep Going!</h3><p>Jangan berhenti bermimpi. Kami mendukungmu!</p>
+    </article>
+    <article class="support-card">
+      <div>🔥</div><h3>Stay Strong!</h3><p>Setiap perjalanan punya tantangannya sendiri.</p>
+    </article>
+    <article class="support-card">
+      <div>⭐</div><h3>Keep Shining!</h3><p>Terus sebarkan kebahagiaan melalui streaming.</p>
+    </article>
+  </div>
+</section>
+
+<section class="final">
+  <div class="final-icon">🚀</div>
+  <p class="eyebrow">THIS IS NOT THE END</p>
+  <h2>THE BEST IS<br><span>YET TO COME.</span></h2>
+  <p>Terus berkarya, Rexyiel. Semoga perjalananmu dipenuhi pengalaman hebat, teman baru, dan pencapaian yang membanggakan.</p>
+  <button class="btn" onclick="celebrate()">SEND GOOD VIBES ✨</button>
+  <h3 id="thanks"></h3>
+
+  <div class="secret-box">
+    <p class="eyebrow">ONE LAST THING...</p>
+    <h3>ARE YOU READY FOR A SURPRISE?</h3>
+    <p>Masih ada satu pesan terakhir yang menunggumu.</p>
+    <button class="btn" onclick="revealSurprise()">
+      UNLOCK THE SECRET ✨
+    </button>
+
+    <div id="secretMessage" class="secret-message">
+      <div class="secret-star">🏆</div>
+      <p class="eyebrow">A MESSAGE JUST FOR YOU</p>
+      <h2>THIS IS YOUR<br><span>TIME TO SHINE.</span></h2>
+      <p>
+        Rexyiel, mungkin kamu belum sampai di tempat yang kamu impikan.
+        Namun jangan pernah meremehkan perjalanan yang sudah kamu mulai.
+      </p>
+      <p>
+        Suatu hari nanti, semoga kamu bisa melihat ribuan orang berkumpul,
+        tertawa, dan menikmati setiap momen streaming bersamamu.
+      </p>
+      <p>
+        Jika suatu saat kamu merasa lelah, ingatlah bahwa ada orang-orang
+        yang percaya pada kemampuanmu, bahkan sejak perjalananmu masih kecil.
+      </p>
+      <h3>KEEP BUILDING YOUR DREAM. NEVER STOP SHINING. ⚡</h3>
+      <div class="secret-footer">THE WORLD HASN'T SEEN YOUR BEST YET.</div>
+      <div class="secret-star">🌟</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">REXYIEL<span>.</span></div>
+  <p>A little website, a lot of support.</p>
+  <small>MADE WITH ⭐ BY A FAN • 2026</small>
+</footer>
+
+<script>
+function openGift() {
+  document.getElementById("intro").classList.add("hide");
+  celebrate();
+}
+
+const quotes = [
+  "Jangan takut memulai dari kecil. Setiap perjalanan besar punya langkah pertama.",
+  "Jumlah penonton hari ini bukan penentu masa depanmu. Teruslah berkembang.",
+  "Jadilah streamer yang bukan hanya ditonton, tetapi juga membawa kebahagiaan.",
+  "Konsistensi, kreativitas, dan sikap baik bisa menjadi kekuatan besar.",
+  "Tidak harus sempurna untuk memulai. Mulailah, lalu terus belajar.",
+  "Jangan bandingkan perjalananmu dengan orang lain. Kamu punya waktumu sendiri.",
+  "Satu live bisa menjadi awal dari kenangan indah bagi seseorang.",
+  "Kesuksesan bukan hanya tentang angka, tetapi juga tentang dampak positif yang kamu berikan.",
+  "Tetap rendah hati saat berhasil dan tetap semangat saat menghadapi tantangan.",
+  "Jaga kesehatan, nikmati prosesnya, dan jangan lupa bangga pada kemajuan kecilmu."
+];
+
+const now = new Date();
+const dayNumber = Math.floor((new Date(now.getFullYear(), now.getMonth(), now.getDate()) - new Date(now.getFullYear(), 0, 0)) / 86400000);
+document.getElementById("dailyQuote").textContent = quotes[(dayNumber - 1) % quotes.length];
+document.getElementById("quoteDay").textContent = "DAILY MESSAGE • " + now.toLocaleDateString("id-ID");
+
+async function loadSupport() {
+  const list = document.getElementById("supportList");
+  try {
+    const response = await fetch("/api/support");
+    if (!response.ok) return;
+    const messages = await response.json();
+
+    if (messages.length === 0) return;
+
+    list.replaceChildren();
+
+    messages.forEach(item => {
+      const card = document.createElement("article");
+      card.className = "support-card";
+      const icon = document.createElement("div");
+      icon.textContent = "⭐";
+      const name = document.createElement("h3");
+      name.textContent = item.name;
+      const message = document.createElement("p");
+      message.textContent = item.message;
+      card.append(icon, name, message);
+      list.appendChild(card);
+    });
+  } catch (error) {
+    console.log("Support messages unavailable.");
+  }
+}
+
+async function sendSupport() {
+  const nameInput = document.getElementById("supportName");
+  const messageInput = document.getElementById("supportMessage");
+  const status = document.getElementById("supportStatus");
+
+  const name = nameInput.value.trim();
+  const message = messageInput.value.trim();
+
+  if (!name || message.length < 3) {
+    status.textContent = "Isi nama panggilan dan pesan minimal 3 karakter.";
+    return;
+  }
+
+  status.textContent = "Mengirim pesan...";
+
+  try {
+    const response = await fetch("/api/support", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, message })
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      status.textContent = result.error || "Pesan gagal dikirim.";
+      return;
+    }
+
+    status.textContent = "Pesan berhasil dikirim! Terima kasih sudah mendukung ⭐";
+    nameInput.value = "";
+    messageInput.value = "";
+    await loadSupport();
+  } catch (error) {
+    status.textContent = "Tidak bisa terhubung ke server.";
+  }
+}
+
+function playPowerSound() {
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) return;
+
+  const audio = new AudioContextClass();
+  const oscillator = audio.createOscillator();
+  const gain = audio.createGain();
+
+  oscillator.type = "sawtooth";
+  oscillator.frequency.setValueAtTime(120, audio.currentTime);
+  oscillator.frequency.exponentialRampToValueAtTime(900, audio.currentTime + 0.45);
+
+  gain.gain.setValueAtTime(0.18, audio.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, audio.currentTime + 0.8);
+
+  oscillator.connect(gain);
+  gain.connect(audio.destination);
+
+  oscillator.start();
+  oscillator.stop(audio.currentTime + 0.8);
+}
+
+function createLightningEffect() {
+  const overlay = document.createElement("div");
+  overlay.className = "lightning-overlay";
+
+  [15, 48, 78].forEach((position, index) => {
+    const bolt = document.createElement("div");
+    bolt.className = "lightning-bolt";
+    bolt.style.left = position + "%";
+    bolt.style.animationDelay = (index * 0.12) + "s";
+    overlay.appendChild(bolt);
+  });
+
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.remove(), 1400);
+}
+
+
+
+
+async function startEpicMusic() {
+  const audio = document.getElementById("bgMusic");
+  if (!audio) return;
+
+  audio.volume = 0.65;
+
+  try {
+    await audio.play();
+  } catch (error) {
+    alert("Musik belum bisa diputar. Tekan tombol MUSIC sekali lagi.");
+  }
+}
+
+async function toggleEpicMusic() {
+  const audio = document.getElementById("bgMusic");
+  if (!audio) return;
+
+  if (audio.paused) {
+    await startEpicMusic();
+  } else {
+    audio.pause();
+  }
+}
+
+function revealSurprise() {
+  startEpicMusic();
+  playPowerSound();
+  const secret = document.getElementById("secretMessage");
+  const effect = document.getElementById("powerEffect");
+  const title = document.getElementById("legendaryTitle");
+
+  if (!secret || !effect || !title) {
+    alert("Elemen kejutan belum ditemukan.");
+    return;
+  }
+
+  secret.classList.add("show");
+  effect.classList.add("active");
+
+  const symbols = ["⚡", "✦", "★", "✨", "✧"];
+
+  for (let i = 0; i < 45; i++) {
+    const particle = document.createElement("span");
+    particle.className = "power-particle";
+    particle.textContent = symbols[i % symbols.length];
+
+    const angle = (i / 45) * Math.PI * 2;
+    const distance = 140 + Math.random() * 180;
+
+    particle.style.left = "50%";
+    particle.style.top = "50%";
+    particle.style.transition = "transform 2s ease-out, opacity 2s";
+    effect.appendChild(particle);
+
+    requestAnimationFrame(() => {
+      particle.style.transform =
+        "translate(" +
+        (Math.cos(angle) * distance) + "px," +
+        (Math.sin(angle) * distance) + "px)";
+      particle.style.opacity = "0";
+    });
+
+    setTimeout(() => particle.remove(), 2200);
+  }
+
+  title.classList.add("active");
+  celebrate();
+}
+
+function closeLegendary() {
+  document.getElementById("legendaryTitle").classList.remove("active");
+  document.getElementById("secretMessage").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function celebrate() {
+  for (let i = 0; i < 40; i++) {
+    const star = document.createElement("span");
+    star.className = "confetti";
+    star.textContent = ["✦", "⭐", "✨", "⭐"][Math.floor(Math.random() * 4)];
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.animationDuration = (2 + Math.random() * 3) + "s";
+    document.body.appendChild(star);
+    setTimeout(() => star.remove(), 5000);
+  }
+  const thanks = document.getElementById("thanks");
+  if (thanks) thanks.textContent = "WE BELIEVE IN YOU, REXYIEL! ⭐";
+}
+
+loadSupport();
+</script>
+
+<button id="backTop" class="back-top"
+onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+aria-label="Kembali ke atas">↑</button>
+
+</body>
+</html>

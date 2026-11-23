@@ -1,0 +1,6 @@
+node_modules/
+data/*.json
+.env
+rexyiel-check.js
+server-backup.js
+public/index-backup.html
