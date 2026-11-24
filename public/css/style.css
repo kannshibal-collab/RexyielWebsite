@@ -1174,3 +1174,81 @@ button:focus-visible {
     animation: none !important;
   }
 }
+
+/* ===== DEEP MIDNIGHT OCEAN - UNIFIED BACKGROUND ===== */
+
+html {
+  background: #050b18;
+}
+
+body {
+  background: #050b18 !important;
+  background-image:
+    radial-gradient(ellipse at 50% 8%, rgba(35, 91, 145, .13), transparent 48%),
+    radial-gradient(ellipse at 10% 48%, rgba(25, 75, 125, .07), transparent 38%),
+    radial-gradient(ellipse at 90% 82%, rgba(25, 75, 125, .07), transparent 38%) !important;
+  background-attachment: fixed;
+}
+
+/* Semua section memakai dasar warna yang sama */
+.hero,
+.section,
+.motivation,
+.dream-section,
+.support,
+.final {
+  background-color: transparent !important;
+}
+
+/* Hilangkan gradasi yang membuat warna terputus */
+.hero {
+  background-image: none !important;
+}
+
+.motivation,
+.dream-section,
+.support,
+.final {
+  background-image: none !important;
+}
+
+/* Cahaya lembut pada setiap bagian */
+.hero {
+  background-image:
+    radial-gradient(ellipse at 50% 35%, rgba(35, 105, 170, .18), transparent 65%) !important;
+}
+
+.message-card,
+.quote-card,
+.journey-card,
+.legend-card,
+.secret-box {
+  background:
+    linear-gradient(145deg, rgba(16, 36, 64, .92), rgba(8, 19, 36, .96)) !important;
+  border-color: rgba(110, 180, 230, .18) !important;
+}
+
+/* Final chapter tetap punya sedikit cahaya */
+.final {
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(35, 95, 155, .16), transparent 65%) !important;
+}
+
+/* Garis pemisah sangat halus */
+.section + .section,
+.section + .final {
+  border-top: 1px solid rgba(120, 180, 230, .045);
+}
+
+/* Konsistensi warna teks */
+.eyebrow,
+.signature,
+.dream-quote {
+  color: #75cfff;
+}
+
+/* Background intro tetap khusus */
+.intro {
+  background:
+    radial-gradient(ellipse at center, #102e50 0%, #071326 48%, #030711 100%) !important;
+}
