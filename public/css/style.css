@@ -559,3 +559,59 @@ footer small { color:#66849f; font-size:9px; letter-spacing:2px; }
   transform: none !important;
   box-shadow: 0 0 25px #ffb700;
 }
+
+/* ===== HALL OF LEGENDS ===== */
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.legend-card {
+  position: relative;
+  padding: 28px 24px;
+  border: 1px solid rgba(160, 100, 255, .25);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(30, 20, 55, .95), rgba(12, 12, 25, .95));
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  overflow: hidden;
+}
+
+.legend-card:hover {
+  transform: translateY(-8px);
+  border-color: #a66cff;
+  box-shadow: 0 12px 35px rgba(130, 70, 255, .2);
+}
+
+.legend-icon {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.legend-card h3 {
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.legend-card > p:last-child {
+  line-height: 1.8;
+  opacity: .8;
+}
+
+.legend-card .eyebrow {
+  color: #b68cff;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+.legend-grid + .dream-quote {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .legend-grid {
+    grid-template-columns: 1fr;
+  }
+}
