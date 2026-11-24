@@ -615,3 +615,74 @@ footer small { color:#66849f; font-size:9px; letter-spacing:2px; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== MIDNIGHT BLUE FINAL CHAPTER ===== */
+.secret-box {
+  position: relative;
+  max-width: 760px;
+  margin: 65px auto 20px;
+  padding: 48px 25px;
+  border: 1px solid rgba(105, 165, 255, .28);
+  border-radius: 24px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(49, 91, 157, .28), transparent 65%),
+    linear-gradient(145deg, #101b35, #080d1c 75%);
+  box-shadow: 0 15px 55px rgba(0, 20, 55, .45),
+              inset 0 0 35px rgba(75, 130, 210, .06);
+  overflow: hidden;
+}
+
+.secret-box .eyebrow {
+  color: #8cb9ff;
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+
+.secret-box h3 {
+  color: #e5efff;
+  font-size: clamp(21px, 4vw, 30px);
+  letter-spacing: 1px;
+  margin: 18px 0;
+  text-shadow: 0 0 22px rgba(100, 160, 255, .25);
+}
+
+.secret-box > p:not(.eyebrow) {
+  color: #a9bddb;
+  line-height: 1.9;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.secret-box .btn {
+  border: 1px solid #8cb9ff !important;
+  border-radius: 14px !important;
+  background: linear-gradient(120deg, #18345e, #315b9d, #18345e) !important;
+  background-size: 200% 200% !important;
+  color: #f0f6ff !important;
+  box-shadow: 0 0 18px rgba(75, 140, 255, .3),
+              inset 0 0 15px rgba(150, 195, 255, .08) !important;
+  animation: none !important;
+  transform: none !important;
+  transition: background-position .4s, box-shadow .3s, transform .3s !important;
+}
+
+.secret-box .btn::before {
+  content: "✦" !important;
+  color: #c8e0ff;
+}
+
+.secret-box .btn::after {
+  content: "A SPECIAL MESSAGE AWAITS" !important;
+  color: #8cb9ff !important;
+}
+
+.secret-box .btn:hover {
+  background-position: 100% 50% !important;
+  box-shadow: 0 0 28px rgba(100, 165, 255, .5) !important;
+  transform: translateY(-3px) !important;
+}
+
+.secret-box .btn:active {
+  transform: scale(.97) !important;
+}
+
