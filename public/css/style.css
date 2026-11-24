@@ -1423,3 +1423,442 @@ footer {
   }
 }
 
+
+/* REXYIEL - HERO ELITE UPGRADE */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(80,190,255,.09);
+  border-radius: 50%;
+  box-shadow:
+    0 0 80px rgba(0,150,255,.08),
+    inset 0 0 80px rgba(0,150,255,.05);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero .eyebrow {
+  display: inline-block;
+  padding: 9px 17px;
+  border: 1px solid rgba(90,200,255,.22);
+  border-radius: 30px;
+  background: rgba(15,55,90,.25);
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 76px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-shadow: 0 8px 35px rgba(0,145,255,.16);
+}
+
+.hero h1 span {
+  color: #79d7ff;
+  text-shadow: 0 0 28px rgba(0,190,255,.28);
+}
+
+.hero .hero-desc {
+  max-width: 590px;
+  margin: 24px auto 30px;
+  line-height: 1.9;
+  color: #b8cde2;
+}
+
+.hero .btn {
+  padding: 16px 27px;
+  border: 1px solid rgba(120,220,255,.5);
+  box-shadow: 0 0 25px rgba(0,160,255,.13);
+  transition: .3s ease;
+}
+
+.hero .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px rgba(0,170,255,.25);
+}
+
+.hero .scroll-note {
+  letter-spacing: 4px;
+  opacity: .65;
+  font-size: 9px;
+}
+
+@media(max-width:700px) {
+  .hero::before {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 48px);
+    letter-spacing: -1px;
+  }
+
+  .hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+}
+
+
+/* REXYIEL - JOURNEY ELITE CARDS */
+.journey-grid {
+  gap: 22px;
+}
+
+.journey-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(100,190,245,.16) !important;
+  border-radius: 20px;
+  background:
+    linear-gradient(145deg,rgba(17,43,72,.92),rgba(6,17,34,.97)) !important;
+  transition: transform .35s ease, border-color .35s ease,
+              box-shadow .35s ease !important;
+}
+
+.journey-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 64%;
+  height: 1px;
+  background: linear-gradient(90deg,transparent,#65d8ff,transparent);
+  opacity: .5;
+}
+
+.journey-card::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: -75px;
+  bottom: -85px;
+  border-radius: 50%;
+  background: rgba(0,160,255,.10);
+  filter: blur(25px);
+  z-index: -1;
+  transition: .35s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-7px) !important;
+  border-color: rgba(80,200,255,.48) !important;
+  box-shadow: 0 18px 42px rgba(0,90,160,.18),
+              inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+
+.journey-card:hover::after {
+  background: rgba(0,190,255,.2);
+}
+
+.journey-card .card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(90,190,255,.2);
+  border-radius: 17px;
+  background: rgba(25,85,130,.2);
+  font-size: 27px;
+  filter: drop-shadow(0 0 12px rgba(60,180,255,.2));
+  transition: transform .3s ease, background .3s ease;
+}
+
+.journey-card:hover .card-icon {
+  transform: translateY(-3px) scale(1.06);
+  background: rgba(25,110,165,.3);
+}
+
+.journey-card h3 {
+  color: #dff4ff;
+  letter-spacing: 1px;
+}
+
+.journey-card p {
+  color: #a9c1d8;
+  line-height: 1.85;
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .journey-card,
+  .journey-card .card-icon {
+    transition: none !important;
+  }
+  .journey-card:hover {
+    transform: none !important;
+  }
+}
+
+
+/* REXYIEL - HALL OF LEGENDS UPGRADE */
+.legend-grid {
+  gap: 24px;
+}
+
+.legend-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(105,195,255,.2) !important;
+  border-radius: 22px !important;
+  background: linear-gradient(
+    145deg,
+    rgba(18,45,76,.95),
+    rgba(5,16,32,.98)
+  ) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,.2);
+  transition: transform .35s ease,
+              border-color .35s ease,
+              box-shadow .35s ease !important;
+}
+
+.legend-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(65,170,235,.13),
+    transparent 65%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.legend-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #77d9ff,
+    transparent
+  );
+  opacity: .65;
+}
+
+.legend-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(100,210,255,.5) !important;
+  box-shadow: 0 22px 48px rgba(0,100,180,.2) !important;
+}
+
+.legend-card .legend-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  border: 1px solid rgba(100,200,255,.25);
+  background: rgba(25,90,140,.22);
+  font-size: 32px;
+  filter: drop-shadow(0 0 14px rgba(60,180,255,.22));
+  transition: transform .3s ease;
+}
+
+.legend-card:hover .legend-icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.legend-card .eyebrow {
+  color: #75cfff !important;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.legend-card h3 {
+  color: #e6f6ff;
+  letter-spacing: 1.2px;
+}
+
+.legend-card p:not(.eyebrow) {
+  color: #abc3da;
+  line-height: 1.85;
+}
+
+.dream-quote {
+  margin-top: 55px;
+  font-size: clamp(15px, 3vw, 21px);
+  letter-spacing: .5px;
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .legend-card,
+  .legend-card .legend-icon {
+    transition: none !important;
+  }
+  .legend-card:hover {
+    transform: none !important;
+  }
+}
+
+
+/* REXYIEL - FINAL CHAPTER EXPERIENCE */
+.final {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.final::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: rgba(0,135,255,.09);
+  filter: blur(85px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.final .final-icon {
+  font-size: 58px;
+  filter: drop-shadow(0 0 22px rgba(70,190,255,.4));
+  animation: finalFloat 4s ease-in-out infinite;
+}
+
+.final h2 {
+  font-size: clamp(35px, 6vw, 62px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.final h2 span {
+  color: #79d7ff;
+  text-shadow: 0 0 28px rgba(0,180,255,.25);
+}
+
+.final > p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 22px auto;
+  color: #b6cce0;
+  line-height: 1.9;
+}
+
+.secret-box {
+  position: relative;
+  max-width: 760px;
+  margin: 75px auto 0;
+  padding: clamp(25px, 5vw, 48px);
+  border: 1px solid rgba(100,195,255,.24) !important;
+  border-radius: 26px !important;
+  background: linear-gradient(
+    145deg,
+    rgba(16,43,73,.95),
+    rgba(5,15,30,.98)
+  ) !important;
+  box-shadow: 0 20px 65px rgba(0,0,0,.25),
+              inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+.secret-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg,transparent,#76dcff,transparent);
+}
+
+.secret-box > h3 {
+  color: #e6f6ff;
+  letter-spacing: 1.2px;
+}
+
+.secret-box > p:not(.eyebrow) {
+  color: #b3c9df;
+  line-height: 1.9;
+}
+
+.secret-message {
+  margin-top: 35px;
+  padding: clamp(22px, 5vw, 42px);
+  border: 1px solid rgba(100,200,255,.25);
+  border-radius: 22px;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(25,85,135,.3),
+    rgba(5,15,30,.85) 75%
+  );
+  box-shadow: 0 0 45px rgba(0,135,255,.09);
+}
+
+.secret-message .secret-star {
+  font-size: 38px;
+  filter: drop-shadow(0 0 15px rgba(100,200,255,.35));
+}
+
+.secret-message h2 {
+  font-size: clamp(28px, 5vw, 46px);
+}
+
+.secret-message p:not(.eyebrow) {
+  color: #c2d7eb;
+  line-height: 1.95;
+}
+
+.secret-message h3 {
+  color: #83dcff;
+  line-height: 1.7;
+  letter-spacing: .7px;
+}
+
+.secret-footer {
+  margin-top: 28px;
+  color: #75cfff;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+@keyframes finalFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .final .final-icon {
+    animation: none;
+  }
+}
+
+@media(max-width:700px) {
+  .secret-box {
+    margin-top: 50px;
+    border-radius: 20px !important;
+  }
+
+  .secret-message {
+    padding: 22px 17px;
+  }
+
+  .secret-footer {
+    letter-spacing: 1.5px;
+  }
+}
+
