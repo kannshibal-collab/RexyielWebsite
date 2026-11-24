@@ -1252,3 +1252,174 @@ body {
   background:
     radial-gradient(ellipse at center, #102e50 0%, #071326 48%, #030711 100%) !important;
 }
+
+/* ===== REXYIEL LUXURY GAMING UI ===== */
+
+/* Smooth page atmosphere */
+body {
+  color: #edf6ff;
+  letter-spacing: .15px;
+}
+
+.section {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+/* Premium headings */
+.section h2,
+.hero h1,
+.final h2 {
+  text-shadow: 0 5px 30px rgba(50, 145, 220, .13);
+}
+
+.eyebrow {
+  text-shadow: 0 0 18px rgba(101, 217, 255, .25);
+}
+
+/* Hero typography */
+.hero h1 {
+  letter-spacing: -2px;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  font-size: 14px;
+  letter-spacing: .2px;
+}
+
+/* Glass cards */
+.message-card,
+.quote-card,
+.journey-card,
+.legend-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, .17),
+    inset 0 1px 0 rgba(255, 255, 255, .035);
+}
+
+/* Card hover refinement */
+.journey-card,
+.legend-card {
+  transform: translateY(0);
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.journey-card:hover,
+.legend-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 45px rgba(0, 65, 125, .20),
+    inset 0 1px 0 rgba(255, 255, 255, .06);
+}
+
+/* Icons */
+.big-icon,
+.card-icon,
+.legend-icon,
+.final-icon {
+  filter: drop-shadow(0 5px 14px rgba(75, 180, 255, .2));
+}
+
+/* Message readability */
+.message-card p,
+.journey-card p,
+.legend-card p {
+  letter-spacing: .15px;
+}
+
+/* Buttons */
+.btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn::before {
+  z-index: -1;
+}
+
+.btn:hover {
+  letter-spacing: 1.3px;
+}
+
+/* Quote card */
+.quote-card {
+  border-radius: 24px;
+}
+
+.quote-card p {
+  color: #d8eaff;
+  font-weight: 400;
+}
+
+/* Dream quote */
+.dream-quote {
+  line-height: 1.8;
+  text-shadow: 0 0 25px rgba(101, 217, 255, .18);
+}
+
+/* Final section */
+.final {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.secret-box {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+/* Footer */
+footer {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: rgba(3, 8, 18, .55);
+}
+
+/* Mobile refinement */
+@media (max-width: 700px) {
+  .section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+    line-height: 1.25;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+  }
+
+  .journey-card,
+  .legend-card {
+    padding: 27px 23px;
+  }
+
+  .final {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .journey-card,
+  .legend-card,
+  .btn {
+    transition: none !important;
+  }
+
+  .journey-card:hover,
+  .legend-card:hover {
+    transform: none;
+  }
+}
+
