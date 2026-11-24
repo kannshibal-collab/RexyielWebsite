@@ -686,3 +686,26 @@ footer small { color:#66849f; font-size:9px; letter-spacing:2px; }
   transform: scale(.97) !important;
 }
 
+
+/* ===== SECRET MESSAGE REVEAL ===== */
+#secretMessage {
+  display: none;
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+#secretMessage.show {
+  display: block;
+  animation: secretReveal .9s ease forwards;
+}
+
+@keyframes secretReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
